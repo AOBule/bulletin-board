@@ -1,0 +1,88 @@
+.user-management-container {
+  padding: 20px;
+
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .user-table {
+    margin:auto;
+    width: 90%;
+    border-collapse: collapse;
+
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      cursor: pointer;
+      background-color: #f2f2f2;
+    }
+
+    th:hover {
+      background-color: #ddd;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 10px;
+
+      .edit-button, .toggle-status-button {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &.edit-button {
+          background-color: #28a745;
+          color: #fff;
+
+          &:hover {
+            background-color: #218838;
+          }
+        }
+
+        &.toggle-status-button {
+          background-color: #dc3545;
+          color: #fff;
+
+          &:hover {
+            background-color: #c82333;
+          }
+        }
+      }
+    }
+  }
+  .add-user-button {
+    margin:auto;
+    width: 90%;
+    text-align:right;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    button {
+      text-align:center;
+      width: 150px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #555;
+      }
+    }
+  }
+}
+
+.error {
+  color: red;
+  text-align: center;
+}

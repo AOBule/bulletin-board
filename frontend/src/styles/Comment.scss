@@ -1,0 +1,17 @@
+.comment-container {
+  border: 1px solid #e1e8ed;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment-content {
+  margin-top: 10px;
+}

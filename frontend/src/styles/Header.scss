@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    img {
+      width: 50px;
+      height: auto;
+    }
+  }
+  .logoMes {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .menu {
+    position: relative;
+
+    .menu-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .menu-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #333;
+      min-width: 150px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+
+      a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+          background-color: #575757;
+        }
+      }
+
+      li {
+        margin: 0px;
+        list-style: none;
+      }
+    }
+
+    &:hover .menu-content {
+      display: block;
+    }
+
+  }
+}
